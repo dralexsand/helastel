@@ -124,6 +124,8 @@ class Helastel_employees_Loader {
 			add_action( $hook['hook'], array( $hook['component'], $hook['callback'] ), $hook['priority'], $hook['accepted_args'] );
 		}
 
+        require_once HELASTEL_DIR."/includes/class-helastel-hooks.php";
+
 	}
 
 }

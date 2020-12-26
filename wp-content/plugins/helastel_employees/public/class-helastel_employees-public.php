@@ -73,6 +73,10 @@ class Helastel_employees_Public {
 		 * class.
 		 */
 
+        wp_enqueue_style("bootstrap.min.css", plugin_dir_url(__FILE__) . 'css/bootstrap.min.css', array(), $this->version, 'all');
+        wp_enqueue_style("jquery.dataTables.min.css", plugin_dir_url(__FILE__) . 'css/jquery.dataTables.min.css', array(), $this->version, 'all');
+        wp_enqueue_style("fontawesome.css", plugin_dir_url(__FILE__) . 'css/fontawesome/css/all.css', array(), $this->version, 'all');
+
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/helastel_employees-public.css', array(), $this->version, 'all' );
 
 	}
@@ -96,7 +100,18 @@ class Helastel_employees_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/helastel_employees-public.js', array( 'jquery' ), $this->version, false );
+        wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/bootstrap.min.js', array('jquery'), $this->version, true);
+
+        wp_enqueue_script("jquery.dataTables.min.js", plugin_dir_url(__FILE__) . 'js/jquery.dataTables.min.js', array('jquery'), $this->version, true);
+        wp_enqueue_script("dataTables.buttons.min.js", plugin_dir_url(__FILE__) . 'js/datatables/dataTables.buttons.min.js', array('jquery'), $this->version, true);
+        wp_enqueue_script("buttons.flash.min.js", plugin_dir_url(__FILE__) . 'js/datatables/buttons.flash.min.js', array('jquery'), $this->version, true);
+        wp_enqueue_script("jszip.min.js", plugin_dir_url(__FILE__) . 'js/datatables/jszip.min.js', array('jquery'), $this->version, true);
+        wp_enqueue_script("pdfmake.min.js", plugin_dir_url(__FILE__) . 'js/datatables/pdfmake.min.js', array('jquery'), $this->version, true);
+        wp_enqueue_script("jvfs_fonts.js", plugin_dir_url(__FILE__) . 'js/datatables/vfs_fonts.js', array('jquery'), $this->version, true);
+        wp_enqueue_script("buttons.html5.min.js", plugin_dir_url(__FILE__) . 'js/datatables/buttons.html5.min.js', array('jquery'), $this->version, true);
+        wp_enqueue_script("buttons.print.min.js", plugin_dir_url(__FILE__) . 'js/datatables/buttons.print.min.js', array('jquery'), $this->version, true);
+
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/helastel_employees-public.js', array( 'jquery' ), $this->version, true );
 
 	}
 

@@ -31,6 +31,10 @@ class Helastel_employees_Deactivator {
 	 */
 	public static function deactivate() {
 
+        require_once(ABSPATH.'wp-admin/includes/upgrade.php');
+        require_once HELASTEL_DIR . 'includes/class-helastel_employees-dbtables.php';
+        $tablesInstance = new Helastel_employees_Dbtables();
+        $tablesInstance->DropTables();
 	}
 
 }

@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       helastel_employees
  * Plugin URI:        helastel.employees.com
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       This is plugin for helastel test
  * Version:           1.0.0
  * Author:            dralexsand
  * Author URI:        helastel.employees.com
@@ -28,6 +28,22 @@
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
+}
+
+if ( ! defined( 'HELASTEL_DIR' ) ) {
+    define('HELASTEL_DIR', plugin_dir_path(__FILE__));
+}
+
+if ( ! defined( 'HELASTEL_URL' ) ) {
+    define('HELASTEL_URL', plugins_url()."/hotelsplugin");
+}
+
+if ( ! defined( 'HELASTEL_PREFIX' ) ) {
+    define('HELASTEL_PREFIX', 'hs_');
+}
+
+if ( ! defined( 'UPLOADFILES_DIR' ) ) {
+    define('UPLOADFILES_DIR', ABSPATH."wp-content/uploads");
 }
 
 /**

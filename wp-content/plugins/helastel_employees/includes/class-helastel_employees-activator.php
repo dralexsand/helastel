@@ -31,6 +31,13 @@ class Helastel_employees_Activator {
 	 */
 	public static function activate() {
 
+        require_once(ABSPATH.'wp-admin/includes/upgrade.php');
+        global $wpdb;
+
+        require_once HELASTEL_DIR . 'includes/class-helastel_employees-dbtables.php';
+        $tablesInstance = new Helastel_employees_Dbtables();
+        $tablesInstance->CreateTables();
+
 	}
 
 }
