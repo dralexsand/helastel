@@ -115,19 +115,16 @@ class Helastel_employees_Data
      */
     public function getTest_4_Data($quantity = 100)
     {
-
-        if (!is_numeric($quantity)) return;
-
         $sql = "
         SELECT 
-            department
+            e.department as department_id, d.name as department
         FROM
-            " . $this->employee_table . "
-        GROUP BY department
-        HAVING COUNT(*) <= ?;
-        ";
+            " . $this->employee_table . " e
+        INNER JOIN " . $this->department_table . " d ON d.id=e.department
+        GROUP BY e.department, d.name
+        HAVING COUNT(e.department) <= ".$quantity;
 
-        return $this->wpdb->get_results($sql, [$quantity]);
+        return $this->wpdb->get_results($sql);
     }
 
     /**

@@ -112,6 +112,7 @@ class Helastel_employees_Public {
         wp_enqueue_script("buttons.print.min.js", plugin_dir_url(__FILE__) . 'js/datatables/buttons.print.min.js', array('jquery'), $this->version, true);
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/helastel_employees-public.js', array( 'jquery' ), $this->version, true );
+		wp_enqueue_script( 'main.js', plugin_dir_url( __FILE__ ) . 'js/main.js', array( 'jquery' ), $this->version, true );
 
 	}
 

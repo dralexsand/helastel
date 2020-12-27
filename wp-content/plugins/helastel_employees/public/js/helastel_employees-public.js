@@ -31,15 +31,21 @@
 
     //$('#table_helastel').DataTable();
 
-    console.log('helastel_employees-public.js INIT');
+    function initTables(){
 
-    $(function () {
+        console.log('helastel_employees-public.js INIT');
+
         $('#table_helastel').DataTable();
         /*$('#table_helastel').DataTable( {
             "ajax": '../ajax/data/arrays.txt'
         } );*/
+    }
+
+    console.log('helastel_employees-public.js INIT');
+
+    $(function () {
+        initTables();
     });
 
 })(jQuery);
 
-//console.log('helastel_employees-public.js INIT OUT');
