@@ -10,15 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1ca79bc-1f50-4a8e-a9ee-97ddba8ef6d3" name="Default Changelist" comment="add libraries and methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/includes/class-helastel-hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/includes/class-helastel-hooks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/includes/class-helastel-process.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/includes/class-helastel-process.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/includes/class-helastel_employees-data.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/includes/class-helastel_employees-data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/includes/helastel_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/includes/helastel_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/public/class-helastel_employees-public.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/public/class-helastel_employees-public.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/public/js/helastel_employees-public.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/helastel_employees/public/js/helastel_employees-public.js" afterDir="false" />
-    </list>
+    <list default="true" id="d1ca79bc-1f50-4a8e-a9ee-97ddba8ef6d3" name="Default Changelist" comment="add libraries and methods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,10 +53,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\server\domains\tests\helastel.test\wp-content\plugins\helastel_employees\includes" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\server\domains\tests\helastel.test\wp-content\plugins\helastel_employees\includes" />
     </key>
   </component>
